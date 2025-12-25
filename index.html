@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tower of Hanoi – Interactive Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START OVERLAY -->
+<div id="start-overlay" class="overlay">
+  <button id="start-btn">START PLAYING</button>
+</div>
+
+<!-- MESSAGE OVERLAY -->
+<div id="message-overlay" class="overlay hidden">
+  <div class="message-box">
+    <h2 id="message-title"></h2>
+    <p id="message-text"></p>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<header class="top-bar">
+  <label>
+    Disks:
+    <select id="disk-count">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </label>
+  <button id="reset-btn">Reset</button>
+  <button id="auto-btn">Auto Demo</button>
+</header>
+
+<!-- GAME AREA -->
+<main class="game-area">
+  <div class="rod"></div>
+  <div class="rod"></div>
+  <div class="rod"></div>
+</main>
+
+<!-- BOTTOM PANEL -->
+<footer class="bottom-panel">
+  <p id="moves">Moves: 0</p>
+  <p id="formula">Current Moves = 0 | Optimal = 2ⁿ − 1</p>
+  <p id="complexity">Time Complexity: O(2ⁿ)</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
